@@ -1,70 +1,123 @@
+:root {
+--color-basik-txt: rgba(67, 68, 85, 1);
+--color-secondary-txt: rgba(46, 47, 66, 1);
+--color-light-txt: rgba(255, 255, 255, 1);
+--color-footer-txt: rgba(231, 233, 252, 1);
+--color-logolight-txt: rgba(244, 244, 253, 1);
+--color-blue-txt: rgba(77, 90, 229, 1);
+--color-activ-txt: rgba(64, 75, 191, 1);
+
+--color-dark-bgr: rgba(46, 47, 66, 1);
+--color-light-bgr: rgba(231, 233, 252, 1);
+--color-team-bgr: rgba(244, 244, 253, 1);
+--color-btn-bgr: rgba(77, 90, 229, 1);
+--color-btnhover-bgr: rgba(64, 75, 191, 1)
+}
+
 /* Index */
 
 body {
-  color: rgba(67, 68, 85, 1);
-  font-family: 'Roboto';
-  font-style: normal;
+  color: var(--color-basik-txt);
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+}
+
 .text {
-  color: rgba(46, 47, 66, 1);
+  color: var(--color-secondary-txt);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
 
 .title {
-  color: rgba(46, 47, 66, 1);
+  color: var(--color-secondary-txt);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
 }
-.navy {
-  color: rgba(46, 47, 66, 1);
+
+.header-nav {
+  color: var(--color-secondary-txt);
   font-weight: 500;
 }
+
+.header-nav .current {
+  color: var(--color-activ-txt);
+}
+
+.header-adress {
+  color: var(--color-basik-txt);
+}
+
+.header-nav:hover,
+.header-nav:focus {
+    color: var(--color-activ-txt);
+}
+
+.header-adress:hover,
+.header-adress:focus {
+  color: var(--color-activ-txt);
+}
+
+.header-nav:active,
+.header-adress:active {
+  color: var(--color-activ-txt);
+}
+
 .logo {
-  color: rgba(46, 47, 66, 1);
-  font-family: 'Raleway';
-  font-style: normal;
+  color: var(--color-blue-txt);
+}
+
+.header-logo {
+  color: var(--color-secondary-txt);
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3;
 }
 
-span {
-  color: rgba(77, 90, 229, 1);
+.header-logo-dark {
+  color: var(--color-secondary-txt);
 }
 
 .hero {
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-light-txt);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
   text-align: center;
-  width: 494px;
-  height: 120px;
-  left: 473px;
-  top: 260px;
+}
+
+.hero,
+.footer {
+  background-color: var(--color-dark-bgr);
 }
 
 .btn {
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-light-txt);
+  background-color: var(--color-btn-bgr);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.footer {
-  color: rgba(231, 233, 252, 1);
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-btnhover-bgr);
 }
 
-.hero,
 .footer {
-  background-color: #2E2F42;
+  color: var(--color-footer-txt);
+  background-color: var(--color-dark-bgr);
 }
 
+.footer-logo-light {
+  color: var(--color-logolight-txt);
+}
