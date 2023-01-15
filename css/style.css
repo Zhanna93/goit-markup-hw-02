@@ -7,6 +7,7 @@
 --color-blue-txt: rgba(77, 90, 229, 1);
 --color-activ-txt: rgba(64, 75, 191, 1);
 
+--color-basik-bgr: rgba(255, 255, 255, 1);
 --color-dark-bgr: rgba(46, 47, 66, 1);
 --color-light-bgr: rgba(231, 233, 252, 1);
 --color-team-bgr: rgba(244, 244, 253, 1);
@@ -75,8 +76,8 @@ a {
   color: var(--color-blue-txt);
 }
 
-.header-logo {
-  color: var(--color-secondary-txt);
+.logo {
+  color: var(--color-blue-txt);
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -106,11 +107,21 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+
+  cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
   background-color: var(--color-btnhover-bgr);
+}
+
+.team {
+  background-color: var(--color-team-bgr);
+}
+
+.card {
+  background-color: var(--color-basik-bgr);
 }
 
 .footer {
@@ -120,4 +131,27 @@ a {
 
 .footer-logo-light {
   color: var(--color-logolight-txt);
+}
+
+/* Portfolio */
+
+.portfolio-btn {
+  color: var(--color-blue-txt);
+  background-color: var(--color-light-bgr);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--color-light-txt);
+  background-color: var(--color-btnhover-bgr);
+}
+
+.item {
+  color: var(--color-basik-txt);
 }
